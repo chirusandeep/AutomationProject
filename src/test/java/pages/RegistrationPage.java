@@ -93,14 +93,6 @@ public class RegistrationPage {
 		aliasAdd.sendKeys("akhanda street");
 		createaccount.click();
 		
-		Select days = new Select(driver.findElement(By.id("days")));
-		days.selectByValue("13");
-		
-		Select months = new Select(driver.findElement(By.id("months")));
-		months.selectByValue("2");
-		
-		Select years = new Select(driver.findElement(By.id("years")));
-		years.selectByValue("1997");
 	}
 	
 }
