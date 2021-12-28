@@ -45,7 +45,7 @@ public class OrderFlowPages {
 	public OrderFlowPages(WebDriver driver) {
 		this.driver = driver;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	}
 	
 	public void Tshirts() {

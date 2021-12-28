@@ -90,8 +90,11 @@ public class RegistrationPage {
 		select.selectByValue("9");
 		zipcode.sendKeys("65644");
 		mobile.sendKeys("4785236941");
+		wait.until(ExpectedConditions.visibilityOf(aliasAdd));
+		wait.until(ExpectedConditions.visibilityOf(createaccount));
 		aliasAdd.sendKeys("akhanda street");
 		createaccount.click();
+		
 		
 	}
 	

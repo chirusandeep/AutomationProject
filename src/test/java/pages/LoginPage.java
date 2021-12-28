@@ -36,7 +36,7 @@ public class LoginPage {
 	
 	public void loadAndWaitForElements() {
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("SubmitCreate")));
 	}
 }

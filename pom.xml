@@ -5,10 +5,6 @@
 	<groupId>AutomationProject</groupId>
 	<artifactId>AutomationProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
-	    <maven.compiler.source>17</maven.compiler.source>
-	    <maven.compiler.target>17</maven.compiler.target>
-  	</properties>
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -24,6 +20,32 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.1.0</version>
+		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+		</dependency>
 	</dependencies>
 </project>
