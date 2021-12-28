@@ -71,12 +71,12 @@ public class RegistrationPage {
 	
 	public void loadAndWaitForElements() {
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("SubmitCreate")));
 	}
 	
 	public void fillAndSubmitForm(String passwd) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
 		gender.click();
 		cfirstname.sendKeys("sand");
@@ -86,6 +86,7 @@ public class RegistrationPage {
 		lastname.sendKeys("pavlol");
 		address.sendKeys("jai balaya street");
 		city.sendKeys("mumbai");
+		wait.until(ExpectedConditions.visibilityOf(state));
 		Select select = new Select(state);
 		select.selectByValue("9");
 		zipcode.sendKeys("65644");
