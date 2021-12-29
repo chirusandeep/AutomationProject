@@ -86,14 +86,17 @@ public class RegistrationPage {
 		lastname.sendKeys("pavlol");
 		address.sendKeys("jai balaya street");
 		city.sendKeys("mumbai");
-		wait.until(ExpectedConditions.visibilityOf(state));
-		Select select = new Select(state);
-		select.selectByValue("9");
+		
 		zipcode.sendKeys("65644");
 		mobile.sendKeys("4785236941");
 		wait.until(ExpectedConditions.visibilityOf(aliasAdd));
 		wait.until(ExpectedConditions.visibilityOf(createaccount));
 		aliasAdd.sendKeys("akhanda street");
+		
+		state.click();
+		Select select = new Select(state);
+		select.selectByValue("9");
+		
 		createaccount.click();
 		
 		
