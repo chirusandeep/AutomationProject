@@ -70,6 +70,7 @@ public class RegistrationPage {
 	}
 	
 	public void loadAndWaitForElements() {
+		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("SubmitCreate")));
